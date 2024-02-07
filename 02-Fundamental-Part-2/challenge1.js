@@ -28,3 +28,15 @@ const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
 const scoreDolphins = calcAverage(44, 23, 71);
 const scoreKoalas = calcAverage(65, 54, 49);
+
+console.log(scoreDolphins);
+console.log(scoreKoalas);
+const checkWinner = (scoreDolphins, scoreKoalas) => {
+  if (scoreDolphins > scoreKoalas) {
+    console.log(`Dolphins wins🏆 ${scoreDolphins} vs ${scoreKoalas}`);
+  } else if (scoreKoalas > scoreDolphins) {
+    console.log(`Koalas wins🏆 ${scoreKoalas} vs ${scoreDolphins}`);
+  }
+};
+
+console.log(checkWinner(scoreDolphins, scoreKoalas));
