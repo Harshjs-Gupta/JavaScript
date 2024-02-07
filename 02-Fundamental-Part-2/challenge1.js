@@ -26,8 +26,8 @@ TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27. */
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
+const scoreDolphins = calcAverage(85, 54, 41);
+const scoreKoalas = calcAverage(23, 34, 27);
 
 // console.log(scoreDolphins);
 // console.log(scoreKoalas);
