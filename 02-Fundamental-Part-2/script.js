@@ -56,4 +56,4 @@ const fruitProcessor = function (apples, oranges) {
   const juice = `Juice with ${applePieces} pieces of apple🍎 and ${orangePieces} pieces of orange 🍊`;
   return juice;
 };
-console.log(fruitProcessor(3, 5));
+console.log(fruitProcessor(2, 3));
