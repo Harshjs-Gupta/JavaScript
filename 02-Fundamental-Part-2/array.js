@@ -9,3 +9,6 @@ console.log(years);
 console.log(friends[0], friends[2]);
 
 console.log(friends.length);
+
+friends[2] = "jay";
+console.log(friends);
