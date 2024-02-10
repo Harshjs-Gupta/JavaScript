@@ -1,6 +1,6 @@
 "use strict";
 
-const friends = ["Michael", "Steven", "Peter"];
+const friends = ["Eich", "John", "Bob"];
 console.log(friends);
 
 const years = new Array(1991, 1994, 2008, 2020);
