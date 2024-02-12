@@ -1,6 +1,6 @@
 "use strict";
 
-// const friends = ["Michael", "Steven", "Peter"];
+const friends = ["Michael", "Steven", "Peter"];
 // console.log(friends);
 
 // const years = new Array(1991, 1994, 2008, 2020, 2024);
@@ -13,3 +13,8 @@
 
 // friends[2] = "jay";
 // console.log(friends);
+
+const firstName = "Harsh";
+const harsh = [firstName, "Gupta", "age", 2020 - 2002, friends];
+
+console.log(harsh);
