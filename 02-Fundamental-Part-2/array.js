@@ -30,3 +30,11 @@ const age2 = calcAge(year[1]);
 const age3 = calcAge(year[year.length - 1]);
 
 console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(year[0]),
+  calcAge(year[1]),
+  calcAge(year[year.length - 1]),
+];
+
+console.log(ages);
