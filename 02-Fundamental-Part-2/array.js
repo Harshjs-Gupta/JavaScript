@@ -50,3 +50,8 @@ console.log(friends.length);
 friends.unshift("John");
 console.log(friends);
 console.log(friends.length);
+
+//Remove elements for an array
+
+friends.pop();
+console.log(friends);
