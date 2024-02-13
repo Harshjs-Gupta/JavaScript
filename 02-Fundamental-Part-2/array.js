@@ -1,6 +1,6 @@
 "use strict";
 
-const friends = ["Michael", "Steven", "Peter"];
+// const friends = ["Michael", "Steven", "Peter"];
 // console.log(friends);
 
 // const years = new Array(1991, 1994, 2008, 2020, 2024);
@@ -38,3 +38,11 @@ const friends = ["Michael", "Steven", "Peter"];
 // ];
 
 // console.log(ages);
+
+/* Basic of array operation */
+
+//Add elements
+const friends = ["michale", "Steven ", "Peter"];
+friends.push("Jay");
+console.log(friends);
+console.log(friends.length);
