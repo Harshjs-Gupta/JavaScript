@@ -18,3 +18,15 @@ const firstName = "Harsh";
 const harsh = [firstName, "Gupta", "age", 2020 - 2002, friends];
 
 console.log(harsh);
+
+const calcAge = function (birthYear) {
+  return 2030 - birthYear;
+};
+
+const year = [1990, 1967, 2008, 2018];
+
+const age1 = calcAge(year[0]);
+const age2 = calcAge(year[1]);
+const age3 = calcAge(year[year.length - 1]);
+
+console.log(age1, age2, age3);
