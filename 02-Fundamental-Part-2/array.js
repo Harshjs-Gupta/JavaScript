@@ -46,3 +46,7 @@ const friends = ["michale", "Steven ", "Peter"];
 friends.push("Jay");
 console.log(friends);
 console.log(friends.length);
+
+friends.unshift("John");
+console.log(friends);
+console.log(friends.length);
