@@ -42,7 +42,7 @@
 /* Basic of array operation */
 
 //Add elements
-const friends = ["Michale", "Steven ", "Peter"];
+const friends = ["Michale", "Steven", "Peter"];
 friends.push("Jay");
 console.log(friends);
 console.log(friends.length);
@@ -62,3 +62,7 @@ console.log(friends);
 
 console.log(friends.indexOf("Steven")); // indexOf is use to know the index of element
 console.log(friends.includes("Steven"));
+
+if (friends.includes("Peter")) {
+  console.log("You have a friend called Peter");
+}
