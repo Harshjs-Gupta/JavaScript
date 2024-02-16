@@ -42,7 +42,7 @@
 /* Basic of array operation */
 
 //Add elements
-const friends = ["michale", "Steven ", "Peter"];
+const friends = ["Michale", "Steven ", "Peter"];
 friends.push("Jay");
 console.log(friends);
 console.log(friends.length);
@@ -53,5 +53,12 @@ console.log(friends.length);
 
 //Remove elements for an array
 
-friends.pop();
+const popped = friends.pop();
+console.log(popped); // jay
 console.log(friends);
+
+friends.shift(); // popped from begnning
+console.log(friends);
+
+console.log(friends.indexOf("Steven")); // indexOf is use to know the index of element
+console.log(friends.includes("Steven"));
