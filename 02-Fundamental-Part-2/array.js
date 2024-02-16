@@ -42,27 +42,27 @@
 /* Basic of array operation */
 
 //Add elements
-const friends = ["Michale", "Steven", "Peter"];
-friends.push("Jay");
-console.log(friends);
-console.log(friends.length);
+// const friends = ["Michale", "Steven", "Peter"];
+// friends.push("Jay");
+// console.log(friends);
+// console.log(friends.length);
 
-friends.unshift("John");
-console.log(friends);
-console.log(friends.length);
+// friends.unshift("John");
+// console.log(friends);
+// console.log(friends.length);
 
-//Remove elements for an array
+// //Remove elements for an array
 
-const popped = friends.pop();
-console.log(popped); // jay
-console.log(friends);
+// const popped = friends.pop();
+// console.log(popped); // jay
+// console.log(friends);
 
-friends.shift(); // popped from begnning
-console.log(friends);
+// friends.shift(); // popped from begnning
+// console.log(friends);
 
-console.log(friends.indexOf("Steven")); // indexOf is use to    know the index of element
-console.log(friends.includes("Steven"));
+// console.log(friends.indexOf("Steven")); // indexOf is use to    know the index of element
+// console.log(friends.includes("Steven"));
 
-if (friends.includes("Peter")) {
-  console.log("You have a friend called Peter");
-}
+// if (friends.includes("Peter")) {
+//   console.log("You have a friend called Peter");
+// }
