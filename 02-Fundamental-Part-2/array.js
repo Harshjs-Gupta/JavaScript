@@ -60,7 +60,7 @@ console.log(friends);
 friends.shift(); // popped from begnning
 console.log(friends);
 
-console.log(friends.indexOf("Steven")); // indexOf is use to know the index of element
+console.log(friends.indexOf("Steven")); // indexOf is use to    know the index of element
 console.log(friends.includes("Steven"));
 
 if (friends.includes("Peter")) {
