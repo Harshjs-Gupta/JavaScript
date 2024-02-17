@@ -99,6 +99,6 @@ const interestedIn = prompt(
 
 console.log(harsh[interestedIn]);
 
-// console.log(
-//   `${harsh.firstName} has ${harsh.friends.length} friends, and his best friends is called ${harsh.friends[0]}`
-// );
+console.log(
+  `${harsh.firstName} has ${harsh.friends.length} friends, and his best friends is called ${harsh.friends[0]}`
+);
