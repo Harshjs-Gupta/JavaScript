@@ -66,3 +66,15 @@
 // if (friends.includes("Peter")) {
 //   console.log("You have a friend called Peter");
 // }
+
+/* Introduction to0 objects*/
+
+const harsh = {
+  firstName: "Harsh",
+  lastName: "Gupta",
+  age: 2037 - 2004,
+  work: "student",
+  friends: ["Michael", "Peter", "steven"],
+};
+
+console.log(harsh);
