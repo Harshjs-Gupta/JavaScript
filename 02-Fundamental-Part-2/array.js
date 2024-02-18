@@ -81,24 +81,37 @@
 
 /* Dot VS Bracket notation*/
 
+// const harsh = {
+//   firstName: "Harsh",
+//   lastName: "Gupta",
+//   age: 2023 - 2004,
+//   work: "student",
+//   friends: ["Michael", "Peter", "steven"],
+// };
+
+// console;
+// console.log(harsh.firstName);
+// console.log(harsh["lastName"]);
+
+// const interestedIn = prompt(
+//   "what do you want to known anout Harsh? Choose between firstName,lastName,age,work and friends"
+// );
+
+// console.log(harsh[interestedIn]);
+
+// console.log(
+//   `${harsh.firstName} has ${harsh.friends.length} friends, and his best friends is called ${harsh.friends[0]}`
+// );
+
+/* Object Method*/
 const harsh = {
   firstName: "Harsh",
   lastName: "Gupta",
   age: 2023 - 2004,
   work: "student",
   friends: ["Michael", "Peter", "steven"],
+
+  calcAge: function (birthYear) {
+    return 2030 - birthYear;
+  },
 };
-
-console;
-console.log(harsh.firstName);
-console.log(harsh["lastName"]);
-
-const interestedIn = prompt(
-  "what do you want to known anout Harsh? Choose between firstName,lastName,age,work and friends"
-);
-
-console.log(harsh[interestedIn]);
-
-console.log(
-  `${harsh.firstName} has ${harsh.friends.length} friends, and his best friends is called ${harsh.friends[0]}`
-);
