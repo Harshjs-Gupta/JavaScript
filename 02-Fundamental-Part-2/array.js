@@ -115,3 +115,5 @@ const harsh = {
     return 2030 - birthYear;
   },
 };
+
+console.log(harsh.calcAge(2004));
