@@ -107,13 +107,21 @@
 const harsh = {
   firstName: "Harsh",
   lastName: "Gupta",
-  age: 2023 - 2004,
+  birthYear: 2019,
   work: "student",
   friends: ["Michael", "Peter", "steven"],
 
-  calcAge: function (birthYear) {
-    return 2030 - birthYear;
+  // this function is not a regular function it's a property of the harsh object
+  // calcAge: function (birthYear) {
+  //   return 2030 - birthYear;
+  // },
+
+  calcAge: function () {
+    return 2030 - this.birthYear;
   },
 };
 
-console.log(harsh.calcAge(2004));
+console.log(harsh.calcAge());
+// console.log(harsh.calcAge(harsh.birthYear));
+// console.log(harsh.calcAge(2019)); //here dot notation is use
+// console.log(harsh["calcAge"](2019)); //bracket notation use
