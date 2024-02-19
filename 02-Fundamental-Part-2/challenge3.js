@@ -12,37 +12,37 @@ Your tasks:
 
 TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.*/
 
-const mark = {
-  fullName: "Mark Miller",
-  mass: 82,
-  height: 2.69,
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
 
-  calcBMI: function () {
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  },
-};
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
 
-const john = {
-  fullName: "John smith's",
-  mass: 92,
-  height: 1.95,
+// const john = {
+//   fullName: "John smith's",
+//   mass: 92,
+//   height: 1.95,
 
-  calcBMI: function () {
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  },
-};
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
 
-console.log(mark.calcBMI(), john.calcBMI());
-// console.log(mark.bmi, john.bmi);
+// console.log(mark.calcBMI(), john.calcBMI());
+// // console.log(mark.bmi, john.bmi);
 
-if (john.bmi > mark.bmi) {
-  console.log(
-    `${john.fullName} BMI ${john.bmi}🤗 is higher than ${mark.fullName} BMI ${mark.bmi}😔`
-  );
-} else {
-  console.log(
-    `${mark.fullName} BMI ${mark.bmi}🤗 is higher than ${john.fullName} BMI ${john.bmi}😔`
-  );
-}
+// if (john.bmi > mark.bmi) {
+//   console.log(
+//     `${john.fullName} BMI ${john.bmi}🤗 is higher than ${mark.fullName} BMI ${mark.bmi}😔`
+//   );
+// } else {
+//   console.log(
+//     `${mark.fullName} BMI ${mark.bmi}🤗 is higher than ${john.fullName} BMI ${john.bmi}😔`
+//   );
+// }
