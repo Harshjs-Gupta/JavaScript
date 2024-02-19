@@ -104,6 +104,7 @@
 // );
 
 /* Object Method*/
+
 // const harsh = {
 //   firstName: "Harsh",
 //   lastName: "Gupta",
