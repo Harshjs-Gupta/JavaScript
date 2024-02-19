@@ -14,8 +14,8 @@ TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 
 
 const mark = {
   fullName: "Mark Miller",
-  mass: 78,
-  height: 1.69,
+  mass: 82,
+  height: 2.69,
 
   calcBMI: function () {
     this.bmi = this.mass / (this.height * this.height);
