@@ -116,12 +116,19 @@ const harsh = {
   //   return 2030 - birthYear;
   // },
 
+  // calcAge: function () {
+  //   return 2030 - this.birthYear;
+  // },
+
   calcAge: function () {
-    return 2030 - this.birthYear;
+    this.age = 2030 - this.birthYear;
+    return this.age;
   },
 };
 
 console.log(harsh.calcAge());
+console.log(harsh.age);
+// console.log(harsh.calcAge());
 // console.log(harsh.calcAge(harsh.birthYear));
 // console.log(harsh.calcAge(2019)); //here dot notation is use
 // console.log(harsh["calcAge"](2019)); //bracket notation use
