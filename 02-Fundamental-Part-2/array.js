@@ -104,36 +104,36 @@
 // );
 
 /* Object Method*/
-const harsh = {
-  firstName: "Harsh",
-  lastName: "Gupta",
-  birthYear: 2019,
-  work: "student",
-  friends: ["Michael", "Peter", "steven"],
-  hasDriverLicense: true,
-  // this function is not a regular function it's a property of the harsh object
-  // calcAge: function (birthYear) {
-  //   return 2030 - birthYear;
-  // },
+// const harsh = {
+//   firstName: "Harsh",
+//   lastName: "Gupta",
+//   birthYear: 2019,
+//   work: "student",
+//   friends: ["Michael", "Peter", "steven"],
+//   hasDriverLicense: true,
+// this function is not a regular function it's a property of the harsh object
+// calcAge: function (birthYear) {
+//   return 2030 - birthYear;
+// },
 
-  // calcAge: function () {
-  //   return 2030 - this.birthYear;
-  // },
+// calcAge: function () {
+//   return 2030 - this.birthYear;
+// },
 
-  calcAge: function () {
-    this.age = 2030 - this.birthYear;
-    return this.age;
-  },
+// calcAge: function () {
+//   this.age = 2030 - this.birthYear;
+//   return this.age;
+// },
 
-  getSummary: function () {
-    return `${harsh.firstName} is a ${harsh.calcAge()}-year old ${
-      harsh.work
-    }, and he has ${
-      harsh.hasDriverLicense == true ? "a" : "no"
-    } driver's license
-    `;
-  },
-};
+// getSummary: function () {
+//   return `${harsh.firstName} is a ${harsh.calcAge()}-year old ${
+//     harsh.work
+//   }, and he has ${
+//     harsh.hasDriverLicense == true ? "a" : "no"
+//   } driver's license
+//   `;
+// },
+// };
 
 // console.log(harsh.calcAge(harsh.birthYear));
 // console.log(harsh.calcAge(2019)); //here dot notation is use
@@ -142,4 +142,4 @@ const harsh = {
 // console.log(harsh.calcAge());
 // console.log(harsh.age);
 
-console.log(harsh.getSummary());
+// console.log(harsh.getSummary());
