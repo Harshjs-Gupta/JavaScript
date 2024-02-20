@@ -75,9 +75,16 @@
 //   console.log(harsh[i]);
 // }
 
-for (let i = 1; i <= 3; i++) {
-  console.log(`---------starting exercise ${i}`);
-  for (let j = 1; j <= 5; j++) {
-    console.log(`Exercise ${i}: Lifting weight repetition ${j} 🏋️`);
-  }
-}
+// for (let i = 1; i <= 3; i++) {
+//   console.log(`---------starting exercise ${i}`);
+//   for (let j = 1; j <= 5; j++) {
+//     console.log(`Exercise ${i}: Lifting weight repetition ${j} 🏋️`);
+//   }
+// }
+
+/* while loops*/
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`Lifting weight repetition ${rep}🏋️`);
+//   rep++;
+// }
