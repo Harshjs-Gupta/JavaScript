@@ -63,14 +63,21 @@
 // }
 
 /* Looping backward and Loops in Loops*/
-const harsh = [
-  "harsh",
-  "gupta",
-  2030 - 2019,
-  "student ",
-  ["Michale", "Peter", "Steven"],
-];
+// const harsh = [
+//   "harsh",
+//   "gupta",
+//   2030 - 2019,
+//   "student ",
+//   ["Michale", "Peter", "Steven"],
+// ];
 
-for (let i = harsh.length - 1; i >= 0; i--) {
-  console.log(harsh[i]);
+// for (let i = harsh.length - 1; i >= 0; i--) {
+//   console.log(harsh[i]);
+// }
+
+for (let i = 1; i <= 3; i++) {
+  console.log(`---------starting exercise ${i}`);
+  for (let j = 1; j <= 5; j++) {
+    console.log(`Exercise ${i}: Lifting weight repetition ${j} 🏋️`);
+  }
 }
