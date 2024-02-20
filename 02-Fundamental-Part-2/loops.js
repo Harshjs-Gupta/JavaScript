@@ -32,17 +32,45 @@
 // console.log(age);
 
 //Continue and break statement
+// const harsh = [
+//   "Harsh",
+//   "Gupta",
+//   2030 - 2019,
+//   "student ",
+//   ["Michale", "Peter", "Steven"],
+// ];
+
+// for (let i = 0; i < harsh.length; i++) {
+//   if (typeof harsh[i] !== "string") {
+//     continue;
+//   }
+//   console.log(harsh[i]);
+// }
+
+// const harsh = [
+//   "Harsh",
+//   "Gupta",
+//   2030 - 2019,
+//   "student ",
+//   ["Michale", "Peter", "Steven"],
+// ];
+
+// for (let i = 0; i < harsh.length; i++) {
+//   if (typeof harsh[i] === "number") {
+//     break;
+//   }
+//   console.log(harsh[i]);
+// }
+
+/* Looping backward and Loops in Loops*/
 const harsh = [
-  "Harsh",
-  "Gupta",
+  "harsh",
+  "gupta",
   2030 - 2019,
   "student ",
   ["Michale", "Peter", "Steven"],
 ];
 
-for (let i = 0; i < harsh.length; i++) {
-  if (typeof harsh[i] !== "string") {
-    continue;
-  }
+for (let i = harsh.length - 1; i >= 0; i--) {
   console.log(harsh[i]);
 }
