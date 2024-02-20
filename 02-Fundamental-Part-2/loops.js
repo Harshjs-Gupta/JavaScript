@@ -22,5 +22,11 @@ for (let i = 0; i < 5; i++) {
 
   type.push(typeof harsh[i]);
 }
-
 console.log(type);
+
+const years = [1991, 2007, 1969, 2020];
+const age = [];
+for (let i = 0; i < years.length; i++) {
+  age.push(2037 - years[i]);
+}
+console.log(age);
