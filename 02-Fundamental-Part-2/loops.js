@@ -15,6 +15,12 @@ const harsh = [
   ["Michale", "Peter", "Steven"],
 ];
 
+const type = [];
+
 for (let i = 0; i < 5; i++) {
   console.log(harsh[i]);
+
+  type.push(typeof harsh[i]);
 }
+
+console.log(type);
