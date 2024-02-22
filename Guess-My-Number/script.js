@@ -38,15 +38,9 @@ document.querySelector('.check').addEventListener('click', function () {
   //When guess is wrong
   else if (guess !== secretNumber) {
     if (score > 1) {
-      if (guess > secretNumber) {
-        displayMessage('📈 Too High!');
-        score--;
-        document.querySelector('.score').textContent = score;
-      } else if (guess < secretNumber) {
-        displayMessage('📉 Too Low!');
-        score--;
-        document.querySelector('.score').textContent = score;
-      }
+      displayMessage(guess > secretNumber ? '📈 Too Hight!' : '📉 Too Low!');
+      score--;
+      document.querySelector('.score').textContent = score;
     } else {
       displayMessage('💥 You Lost The Game');
       document.querySelector('.score').textContent = 0;
