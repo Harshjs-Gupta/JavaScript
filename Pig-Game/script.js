@@ -62,7 +62,7 @@ btnRoll.addEventListener("click", function () {
   }
 });
 
-const storeScore = function () {
+const HoldButton = function () {
   if (playing) {
     // 1. Add current score to active player's score
     scores[activePlayer] += currentScore;
@@ -91,6 +91,6 @@ const storeScore = function () {
   }
 };
 
-btnHold.addEventListener("click", storeScore);
+btnHold.addEventListener("click", HoldButton);
 
 btnNew.addEventListener("click", newGame);
