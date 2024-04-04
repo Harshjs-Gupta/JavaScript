@@ -236,3 +236,12 @@ console.log(main, secondary);
 // console.log("" || "Harsh"); // Harsh
 // console.log(true || 0); //true
 // console.log(undefined || null); //null
+
+// console.log(undefined || 0 || "" || "harsh" || 23 || null); // harsh
+
+// restaurant.numGuests = 23;
+// const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+// console.log(guests1);
+
+// const guests2 = restaurant.numGuests || 10;
+// console.log(guests2);
