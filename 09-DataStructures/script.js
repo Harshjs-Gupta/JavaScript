@@ -257,3 +257,12 @@ console.log(main, secondary);
 // if (restaurant.orderPizza) {
 //   restaurant.orderPizza("mushroom", "Paneer");
 // }
+
+////////////////////////////////////
+/* Nullish Coalescing operator (??) */
+// restaurant.numGuests = 0;
+// const guests = restaurant.numGuests || 10;
+// console.log(guests);
+
+// const guestsCorrect = restaurant.numGuests ?? 10;
+// console.log(guestsCorrect);
