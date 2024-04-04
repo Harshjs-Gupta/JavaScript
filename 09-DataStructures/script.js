@@ -266,3 +266,16 @@ console.log(main, secondary);
 
 // const guestsCorrect = restaurant.numGuests ?? 10;
 // console.log(guestsCorrect);
+
+/////////////////////////////////////
+/* Logical Assignment Operators (!, ||, &&) */
+// const rest1 = {
+//   name: "Capri",
+//   // numGuests: 20,
+//   numGuests: 0,
+// };
+
+// const rest2 = {
+//   name: "La Piazza",
+//   owner: "Giovanni Rossi",
+// };
