@@ -245,3 +245,15 @@ console.log(main, secondary);
 
 // const guests2 = restaurant.numGuests || 10;
 // console.log(guests2);
+/* ---------------- && ---------------*/
+// console.log(0 && "harsh"); //0
+// console.log(7 && "harsh"); //harsh
+
+// console.log("hello" && 23 && null && "harsh"); //null
+
+// const result = true && 9 < 10 && "Harsh";
+// console.log(result); // Harsh
+
+// if (restaurant.orderPizza) {
+//   restaurant.orderPizza("mushroom", "Paneer");
+// }
