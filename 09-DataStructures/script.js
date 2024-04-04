@@ -279,3 +279,15 @@ console.log(main, secondary);
 //   name: "La Piazza",
 //   owner: "Giovanni Rossi",
 // };
+// rest1.numGuests = rest1.numGuests || 10; //20
+// rest2.numGuests = rest2.numGuests || 10; //10
+
+/* OR assignment operator */
+// rest1.numGuests ||= 10; //20
+// rest2.numGuests ||= 10; //10
+
+/* (??) Nullish assignment operator */
+// rest1.numGuests ??= 10;
+
+// console.log(rest1);
+// console.log(rest2);
