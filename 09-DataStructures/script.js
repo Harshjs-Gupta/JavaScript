@@ -213,8 +213,8 @@ console.log(main, secondary);
 //   console.log(sum);
 // };
 // add(2, 3); //5
-// add(5, 3, 7, 2); //[5,3,7,2]
-// add(8, 2, 5, 3, 2, 1, 4); //[8,2,5,3,2,1,4]
+// add(5, 3, 7, 2); //17
+// add(8, 2, 5, 3, 2, 1, 4); //25
 
 // const x = [23, 5, 7];
 // add(...x);
@@ -288,6 +288,30 @@ console.log(main, secondary);
 
 /* (??) Nullish assignment operator */
 // rest1.numGuests ??= 10;
+// rest2.numGuests ??= 10;
+
+/* (&&) AND assignment operator */
+// rest1.owner = rest1.owner && "<ANONYMOUS>";
+// rest2.owner = rest2.owner && "<ANONYMOUS>";
+// rest1.owner &&= "<ANONYMOUS>";
+// rest2.owner &&= "<ANONYMOUS>";
 
 // console.log(rest1);
 // console.log(rest2);
+
+////////////////////////////////////////
+/* Looping Array: The for-of Loop */
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// for (const dish of menu) console.log(dish);
+
+// for (const item of menu.entries()) {
+//   console.log(`${item[0] + 1}: ${item[1]}`);
+// }
+//              /\
+//              |
+//Insted of this we write like this
+//              |
+//             \/
+for (const [item, elements] of menu.entries()) {
+  console.log(`${item + 1}: ${elements}`);
+}
