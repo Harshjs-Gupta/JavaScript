@@ -1,4 +1,19 @@
 "use strict ";
+/* Enhanced Object Literals */
+const openingHours = {
+  thu: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0,
+    close: 24,
+  },
+};
 
 const restaurant = {
   name: "classio Italiano",
@@ -6,20 +21,7 @@ const restaurant = {
   categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
   starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
   mainMenu: ["Pizza ", "Pasta", "Risotto"],
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0,
-      close: 24,
-    },
-  },
+  openingHours,
 
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
@@ -301,8 +303,8 @@ console.log(main, secondary);
 
 ////////////////////////////////////////
 /* Looping Array: The for-of Loop */
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-// for (const dish of menu) console.log(dish);
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// for (const item of menu) console.log(item);
 
 // for (const item of menu.entries()) {
 //   console.log(`${item[0] + 1}: ${item[1]}`);
@@ -312,6 +314,14 @@ const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 //Insted of this we write like this
 //              |
 //             \/
-for (const [item, elements] of menu.entries()) {
-  console.log(`${item + 1}: ${elements}`);
-}
+// for (const [item, elements] of menu.entries()) {
+//   console.log(`${item + 1}: ${elements}`);
+// }
+
+///////////////////////////////////////
+/* Optional chaining */
+if (restaurant.openingHours && restaurant.openingHours.mon)
+  // Without opional chaining
+  console.log(restaurant.openingHours.mon.open);
+// With optional chaining
+console.log(restaurant.openingHours.mon?.open);
