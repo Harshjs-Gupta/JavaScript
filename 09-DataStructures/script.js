@@ -346,3 +346,12 @@ console.log(main, secondary);
 
 //////////////////////////////////////////////
 /* Looping Objects: Object Keys,Values,and Entries */
+/*Property NAME */
+const properties = Object.keys(openingHours);
+console.log(properties);
+
+let openStr = `We are open on ${properties.length} days: `;
+for (const day of properties) {
+  openStr += `${day},`;
+}
+console.log(openStr);
