@@ -327,9 +327,13 @@ console.log(main, secondary);
 ////////// With optional chaining
 // console.log(restaurant.openingHours.mon?.open); // undefine
 
-const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-for (const day of days) {
-  // console.log(day);
-  const open = restaurant.openingHours[day]?.open;
-  console.log(`On ${day} , we open at ${open}`);
-}
+// const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+// for (const day of days) {
+//   // console.log(day);
+//   const open = restaurant.openingHours[day]?.open ?? "Closed";
+//   console.log(`On ${day} , we open at ${open}`);
+// }
+
+// /////Methods
+console.log(restaurant.order?.(0, 1) ?? "Method does not exist"); // ['Focaccia', 'Pasta']
+console.log(restaurant.orderRisotto?.(0, 1) ?? "Method does not exist"); // Method does not exist
