@@ -335,5 +335,14 @@ console.log(main, secondary);
 // }
 
 // /////Methods
-console.log(restaurant.order?.(0, 1) ?? "Method does not exist"); // ['Focaccia', 'Pasta']
-console.log(restaurant.orderRisotto?.(0, 1) ?? "Method does not exist"); // Method does not exist
+// console.log(restaurant.order?.(0, 1) ?? "Method does not exist"); // ['Focaccia', 'Pasta']
+// console.log(restaurant.orderRisotto?.(0, 1) ?? "Method does not exist"); // Method does not exist
+
+///Array
+// const user = [{ name: "Harsh", email: "hello@harsh.io" }];
+// console.log(user[0]?.name ?? "User array empty"); // Harsh
+// const users = [];
+// console.log(users[0]?.name ?? "User array empty"); // User array empty
+
+//////////////////////////////////////////////
+/* Looping Objects: Object Keys,Values,and Entries */
