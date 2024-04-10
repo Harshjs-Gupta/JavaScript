@@ -370,35 +370,44 @@ console.log(main, secondary);
 
 ////////////////////////////////////////
 /* Sets */
-const ordersSet = new Set([
-  "Pasta",
-  "Pizza",
-  "Pizza",
-  "Risotto",
-  "Pasta",
-  "Pizza",
-]);
-console.log(ordersSet); // Set(3) { 'Pasta', 'Pizza', 'Risotto' }
+/* Create a Set*/
+// const letters = new Set(["a", "b", "c"]);
+// console.log(letters);
+/* Create a Set*/
+// const letters = new Set();
 
-console.log(new Set("Harsh")); // Set(5) { 'H', 'a', 'r', 's', 'h' }
+// // Add Values to the Set
+// letters.add("a");
+// letters.add("b");
+// letters.add("c");
+// console.log(letters);
 
-console.log(ordersSet.size); // 3 //in array we write ordersSet.length but in set we write ordersSet.size
+// const ordersSet = new Set([
+//   "Pasta",
+//   "Pizza",
+//   "Pizza",
+//   "Risotto",
+//   "Pasta",
+//   "Pizza",
+// ]);
+// console.log(ordersSet); // Set(3) { 'Pasta', 'Pizza', 'Risotto' }
 
-console.log(ordersSet.has("Pizza"));
-console.log(ordersSet.has("Bread"));
-ordersSet.add("Garlic Bread");
-ordersSet.delete("Risotto");
-// ordersSet.clear(); //Delete all data
-console.log(ordersSet);
-for (const order of ordersSet) console.log(order);
-//Example
-const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
-const staffUnique = [...new Set(staff)]; //Spread Operator use for make array
-console.log(staffUnique);
-console.log(
-  new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size
-);
-console.log(new Set("harsh").size); // this show the size of the set
+// console.log(new Set("Harsh")); // Set(5) { 'H', 'a', 'r', 's', 'h' }
 
-////////////////////////////////////////
-/* Maps */
+// console.log(ordersSet.size); // 3 //in array we write ordersSet.length but in set we write ordersSet.size
+
+// console.log(ordersSet.has("Pizza"));
+// console.log(ordersSet.has("Bread"));
+// ordersSet.add("Garlic Bread");
+// ordersSet.delete("Risotto");
+// // ordersSet.clear(); //Delete all data
+// console.log(ordersSet);
+// for (const order of ordersSet) console.log(order);
+// //Example
+// const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
+// const staffUnique = [...new Set(staff)]; //Spread Operator use for make array
+// console.log(staffUnique);
+// console.log(
+//   new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size
+// );
+// console.log(new Set("harsh").size); // this show the size of the set
