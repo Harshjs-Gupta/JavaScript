@@ -383,3 +383,10 @@ console.log(ordersSet); // Set(3) { 'Pasta', 'Pizza', 'Risotto' }
 console.log(new Set("Harsh")); // Set(5) { 'H', 'a', 'r', 's', 'h' }
 
 console.log(ordersSet.size); // 3 //in array we write ordersSet.length but in set we write ordersSet.size
+
+console.log(ordersSet.has("Pizza"));
+console.log(ordersSet.has("Bread"));
+ordersSet.add("Garlic Bread");
+ordersSet.delete("Risotto");
+// ordersSet.clear(); //Delete all data
+console.log(ordersSet);
