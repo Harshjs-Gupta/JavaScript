@@ -390,3 +390,15 @@ ordersSet.add("Garlic Bread");
 ordersSet.delete("Risotto");
 // ordersSet.clear(); //Delete all data
 console.log(ordersSet);
+for (const order of ordersSet) console.log(order);
+//Example
+const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
+const staffUnique = [...new Set(staff)]; //Spread Operator use for make array
+console.log(staffUnique);
+console.log(
+  new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size
+);
+console.log(new Set("harsh").size); // this show the size of the set
+
+////////////////////////////////////////
+/* Maps */
