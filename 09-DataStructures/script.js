@@ -347,23 +347,39 @@ console.log(main, secondary);
 //////////////////////////////////////////////
 /* Looping Objects: Object Keys,Values,and Entries */
 /*Property NAME */
-const properties = Object.keys(openingHours);
-console.log(properties);
+// const properties = Object.keys(openingHours);
+// console.log(properties);
 
-let openStr = `We are open on ${properties.length} days: `;
-for (const day of properties) {
-  openStr += `${day},`;
-}
-console.log(openStr);
+// let openStr = `We are open on ${properties.length} days: `;
+// for (const day of properties) {
+//   openStr += `${day},`;
+// }
+// console.log(openStr);
 
-/* Property VALUES */
-const values = Object.values(openingHours);
-console.log(values);
+// /* Property VALUES */
+// const values = Object.values(openingHours);
+// console.log(values);
 
-/* Entire Object */
-const entries = Object.entries(openingHours);
-console.log(entries);
+// /* Entire Object */
+// const entries = Object.entries(openingHours);
+// console.log(entries);
 
-for (const [key, { open, close }] of entries) {
-  console.log(`On ${key} we open at ${open} and close at ${close}`);
-}
+// for (const [key, { open, close }] of entries) {
+//   console.log(`On ${key} we open at ${open} and close at ${close}`);
+// }
+
+////////////////////////////////////////
+/* Sets */
+const ordersSet = new Set([
+  "Pasta",
+  "Pizza",
+  "Pizza",
+  "Risotto",
+  "Pasta",
+  "Pizza",
+]);
+console.log(ordersSet); // Set(3) { 'Pasta', 'Pizza', 'Risotto' }
+
+console.log(new Set("Harsh")); // Set(5) { 'H', 'a', 'r', 's', 'h' }
+
+console.log(ordersSet.size); // 3 //in array we write ordersSet.length but in set we write ordersSet.size
