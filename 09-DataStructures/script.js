@@ -411,3 +411,15 @@ console.log(main, secondary);
 //   new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size
 // );
 // console.log(new Set("harsh").size); // this show the size of the set
+
+////////////////////////////////////////
+/* Maps */
+const rest = new Map();
+rest.set("name", "Classico Italiano");
+rest.set(1, "Firenze, Italy");
+console.log(rest.set(2, "Lisbon, Portugal"));
+rest.set("categories", ["Italian", "Pizzeria", "Vegetarian", "Organic"]);
+rest.set("open", 11);
+rest.set("close", 23);
+rest.set(true, "We are open :D");
+rest.set(false, "We are closed :(");
