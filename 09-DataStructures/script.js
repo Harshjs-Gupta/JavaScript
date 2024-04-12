@@ -445,16 +445,16 @@ console.log(main, secondary);
 
 ///////////////////////////////////////////
 /* Maps : Iteration */
-const question = new Map([
-  ["question", "what is the best programming language in the world?"],
-  [1, "C"],
-  [2, "Java"],
-  [3, "JavaScript"],
-  ["correct", 3],
-  [true, "Correct 🎉"],
-  [false, "Try again!"],
-]);
-console.log(question);
+// const question = new Map([
+//   ["question", "what is the best programming language in the world?"],
+//   [1, "C"],
+//   [2, "Java"],
+//   [3, "JavaScript"],
+//   ["correct", 3],
+//   [true, "Correct 🎉"],
+//   [false, "Try again!"],
+// ]);
+// console.log(question);
 /* Convert object to map */
 // console.log(Object.entries(openingHours));
 // const hoursMap = new Map(Object.entries(openingHours));
@@ -475,3 +475,18 @@ console.log(question);
 // console.log([...question.values()]);
 
 ////////////////////////////////////////////
+/* Working with string  Part-1 */
+// const airline = "TAP Air Portugal";
+// const plane = "A320";
+
+// console.log(plane[0]);
+// console.log(plane[1]);
+// console.log(plane[2]);
+// console.log("B737"[0]);
+
+// console.log(airline.length);
+// console.log("B737".length);
+
+// console.log(airline.indexOf("r"));
+// console.log(airline.lastIndexOf("r"));
+// console.log(airline.indexOf("Portugal"));
