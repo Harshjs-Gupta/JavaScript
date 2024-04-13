@@ -512,3 +512,30 @@ console.log(main, secondary);
 // console.log(new String("jonas"));
 // console.log(typeof new String("jonas"));
 // console.log(typeof new String("jonas").slice(1));
+
+////////////////////////////////////////////
+/* Working with string  Part-2 */
+// const airline = "TAP Air Portugal";
+
+// console.log(airline.toLowerCase());
+// console.log(airline.toUpperCase());
+
+// // Fix capitalization in name
+// const passenger = "hArSH"; // Harsh
+// const passengerLower = passenger.toLowerCase();
+// const passengerCorrect =
+//   passengerLower[0].toUpperCase() + passengerLower.slice(1);
+// console.log(passengerCorrect);
+
+/* Comparing emails */
+// const email = "hello@harsh.io";
+// const loginEmail = "   Hello@Harsh.Io \n";
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+// const normalizedEmail = loginEmail.toLowerCase().trim();
+// console.log(normalizedEmail);
+// console.log(email === normalizedEmail);
+/* replacing */
+// const priceGB = "288,97£";
+// const priceUS = priceGB.replace("£", "$").replace(",", ".");
+// console.log(priceUS);
