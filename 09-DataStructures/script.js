@@ -539,3 +539,17 @@ console.log(main, secondary);
 // const priceGB = "288,97£";
 // const priceUS = priceGB.replace("£", "$").replace(",", ".");
 // console.log(priceUS);
+
+// const announcement =
+//   "All passengers come to boarding door 23. Boarding door 23!";
+
+// console.log(announcement.replace("door", "gate"));
+// console.log(announcement.replaceAll("door", "gate"));
+// console.log(announcement.replace(/door/g, "gate"));
+/* Booleans */
+// const plane = "Airbus A320neo";
+// console.log(plane.includes("A320"));
+// console.log(plane.includes("Boeing"));
+// if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
+//   console.log("Part of the NEW Airbus family");
+// }
