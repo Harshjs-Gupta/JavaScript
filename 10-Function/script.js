@@ -27,3 +27,14 @@
 // checkIn(flight, jonas);
 // First-class and Higher-order functions
 // Functions returning functions
+
+///////////////////////////////////
+/* First class and higher order function */
+const oneWord = function (str) {
+  return str.replace(/ /g, "").toLowerCase();
+};
+
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(" ");
+  return [first.toUpperCase(), ...others].join(" ");
+};
