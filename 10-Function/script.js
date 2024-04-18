@@ -71,16 +71,19 @@
 
 /* Arrow Function */
 // Example 1
-const greet2 = (greeting) => {
-  return (name) => {
-    console.log(`${greeting} ${name} `);
-  };
-};
+// const greet2 = (greeting) => {
+//   return (name) => {
+//     console.log(`${greeting} ${name} `);
+//   };
+// };
 
-const greeterHey2 = greet2("Hey");
-greeterHey2("Harsh");
-greeterHey2("Bob");
+// const greeterHey2 = greet2("Hey");
+// greeterHey2("Harsh");
+// greeterHey2("Bob");
 
-greet2("Hello")("Harsh");
+// greet2("Hello")("Harsh");
+//Example 2
+const greet3 = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
+greet3("Hey")("Harsh");
 ////////////////////////////////////
