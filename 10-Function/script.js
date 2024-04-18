@@ -57,14 +57,30 @@
 
 ////////////////////////////////////
 /* Function returning Function */
-const greet = function (greeting) {
-  return function (name) {
-    console.log(`${greeting} ${name}`);
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+
+// const greeterHey = greet("Hey");
+// greeterHey("Harsh");
+// greeterHey("Bob");
+
+// greet("Hello")("Harsh");
+
+/* Arrow Function */
+// Example 1
+const greet2 = (greeting) => {
+  return (name) => {
+    console.log(`${greeting} ${name} `);
   };
 };
 
-const greeterHey = greet("Hey");
-greeterHey("Harsh");
-greeterHey("Bob");
+const greeterHey2 = greet2("Hey");
+greeterHey2("Harsh");
+greeterHey2("Bob");
 
-greet("Hello")("Harsh");
+greet2("Hello")("Harsh");
+
+////////////////////////////////////
