@@ -78,12 +78,14 @@
 // };
 
 // const greeterHey2 = greet2("Hey");
-// greeterHey2("Harsh");
-// greeterHey2("Bob");
+// greeterHey2("Harsh"); // Hey Harsh
+// greeterHey2("Bob");  // Hey Bob
 
-// greet2("Hello")("Harsh");
+// greet2("Hello")("Harsh"); // Hello Harsh
 //Example 2
-const greet3 = (greeting) => (name) => console.log(`${greeting} ${name}`);
+// const greet3 = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
-greet3("Hey")("Harsh");
+// greet3("Hey")("Harsh"); // Hey Harsh
+
 ////////////////////////////////////
+/* The call and apply methods */
