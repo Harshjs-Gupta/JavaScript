@@ -102,3 +102,5 @@ const lufthansa = {
 };
 
 lufthansa.book(239, "Harsh");
+lufthansa.book(635, "Bob");
+console.log(lufthansa);
