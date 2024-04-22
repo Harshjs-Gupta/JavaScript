@@ -88,7 +88,7 @@
 // greet3("Hey")("Harsh"); // Hey Harsh
 
 ////////////////////////////////////
-/* The call and apply methods */
+/* The call Method */
 const lufthansa = {
   airline: "Lufthansa",
   iataCode: "LH",
@@ -101,6 +101,22 @@ const lufthansa = {
   },
 };
 
-lufthansa.book(239, "Harsh");
-lufthansa.book(635, "Bob");
-console.log(lufthansa);
+// lufthansa.book(239, "Harsh");
+// lufthansa.book(635, "Bob");
+// console.log(lufthansa);
+
+const eurowings = {
+  airline: "Eurowings",
+  iataCode: "EW",
+  bookings: [],
+};
+
+const book = lufthansa.book; // book is a function
+
+// book(23, "Harsh"); // book is not a function
+
+// Call Method
+book.call(eurowings, 23, "Harsh");
+console.log(eurowings);
+
+book.call(lufthansa, 239, "Bob");
