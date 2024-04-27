@@ -120,3 +120,20 @@ book.call(eurowings, 23, "Harsh");
 console.log(eurowings);
 
 book.call(lufthansa, 239, "Bob");
+console.log(lufthansa);
+
+const swiss = {
+  airline: "Swiss Air line",
+  iataCode: "LX",
+  bookings: [],
+};
+
+book.call(swiss, 583, "Harsh"); // Swiss Air line
+console.log(swiss); // Swiss Air line
+
+// Apply Method
+const flightData = [583, "Harsh"];
+book.apply(swiss, flightData);
+console.log(swiss);
+
+book.call(swiss, ...flightData); // same as apply method but it is not used anymore
