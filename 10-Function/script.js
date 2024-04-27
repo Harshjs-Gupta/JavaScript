@@ -105,57 +105,74 @@ const lufthansa = {
 // lufthansa.book(635, "Bob");
 // console.log(lufthansa);
 
-const eurowings = {
-  airline: "Eurowings",
-  iataCode: "EW",
-  bookings: [],
+// const eurowings = {
+//   airline: "Eurowings",
+//   iataCode: "EW",
+//   bookings: [],
+// };
+
+// const book = lufthansa.book; // book is a function
+
+// // book(23, "Harsh"); // book is not a function
+
+// // Call Method
+// book.call(eurowings, 23, "Harsh");
+// console.log(eurowings);
+
+// book.call(lufthansa, 239, "Bob");
+// console.log(lufthansa);
+
+// const swiss = {
+//   airline: "Swiss Air line",
+//   iataCode: "LX",
+//   bookings: [],
+// };
+
+// book.call(swiss, 583, "Harsh"); // Swiss Air line
+// console.log(swiss); // Swiss Air line
+
+// // Apply Method
+// const flightData = [583, "Harsh"];
+// book.apply(swiss, flightData);
+// console.log(swiss);
+
+// book.call(swiss, ...flightData); // same as apply method but it is not used anymore
+
+// // Bind Method
+// const bookEW = book.bind(eurowings);
+// const bookLH = book.bind(lufthansa);
+// const bookLX = book.bind(swiss);
+// bookLX(23, "Harsh");
+// bookLX(583, "Harsh");
+
+// const bookEW23 = book.bind(eurowings, 23);
+// bookEW23("Harsh");
+
+// // With Event Listeners
+// lufthansa.planes = 300;
+// lufthansa.buyPlane = function () {
+//   console.log(this);
+//   this.planes++;
+//   console.log(this.planes);
+// };
+// // lufthansa.buyPlane();
+// document
+//   .querySelector(".buy")
+//   .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
+
+// Partial Application
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
+
+const addVAT = addTax.bind(null, 0.23);
+console.log(addVAT(100));
+console.log(addVAT(23));
+
+const addTaxRate = function (rate) {
+  return function (value) {
+    return value + value * rate;
+  };
 };
-
-const book = lufthansa.book; // book is a function
-
-// book(23, "Harsh"); // book is not a function
-
-// Call Method
-book.call(eurowings, 23, "Harsh");
-console.log(eurowings);
-
-book.call(lufthansa, 239, "Bob");
-console.log(lufthansa);
-
-const swiss = {
-  airline: "Swiss Air line",
-  iataCode: "LX",
-  bookings: [],
-};
-
-book.call(swiss, 583, "Harsh"); // Swiss Air line
-console.log(swiss); // Swiss Air line
-
-// Apply Method
-const flightData = [583, "Harsh"];
-book.apply(swiss, flightData);
-console.log(swiss);
-
-book.call(swiss, ...flightData); // same as apply method but it is not used anymore
-
-// Bind Method
-const bookEW = book.bind(eurowings);
-const bookLH = book.bind(lufthansa);
-const bookLX = book.bind(swiss);
-bookLX(23, "Harsh");
-bookLX(583, "Harsh");
-
-const bookEW23 = book.bind(eurowings, 23);
-bookEW23("Harsh");
-
-// With Event Listeners
-lufthansa.planes = 300;
-lufthansa.buyPlane = function () {
-  console.log(this);
-  this.planes++;
-  console.log(this.planes);
-};
-// lufthansa.buyPlane();
-document
-  .querySelector(".buy")
-  .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
+const addVAT2 = addTaxRate(0.23);
+console.log(addVAT2(100));
+console.log(addVAT2(23));
