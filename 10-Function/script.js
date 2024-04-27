@@ -137,3 +137,13 @@ book.apply(swiss, flightData);
 console.log(swiss);
 
 book.call(swiss, ...flightData); // same as apply method but it is not used anymore
+
+// Bind Method
+const bookEW = book.bind(eurowings);
+const bookLH = book.bind(lufthansa);
+const bookLX = book.bind(swiss);
+bookLX(23, "Harsh");
+bookLX(583, "Harsh");
+
+const bookEW23 = book.bind(eurowings, 23);
+bookEW23("Harsh");
