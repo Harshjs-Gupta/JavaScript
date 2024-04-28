@@ -89,17 +89,17 @@
 
 ////////////////////////////////////
 /* The call Method */
-const lufthansa = {
-  airline: "Lufthansa",
-  iataCode: "LH",
-  bookings: [],
-  book(flightNum, name) {
-    console.log(
-      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
-    );
-    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
-  },
-};
+// const lufthansa = {
+//   airline: "Lufthansa",
+//   iataCode: "LH",
+//   bookings: [],
+//   book(flightNum, name) {
+//     console.log(
+//       `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+//     );
+//     this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+//   },
+// };
 
 // lufthansa.book(239, "Harsh");
 // lufthansa.book(635, "Bob");
@@ -161,18 +161,40 @@ const lufthansa = {
 //   .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
 
 // Partial Application
-const addTax = (rate, value) => value + value * rate;
-console.log(addTax(0.1, 200));
+// const addTax = (rate, value) => value + value * rate;
+// console.log(addTax(0.1, 200));
 
-const addVAT = addTax.bind(null, 0.23);
-console.log(addVAT(100));
-console.log(addVAT(23));
+// const addVAT = addTax.bind(null, 0.23);
+// console.log(addVAT(100));
+// console.log(addVAT(23));
 
-const addTaxRate = function (rate) {
-  return function (value) {
-    return value + value * rate;
-  };
+// const addTaxRate = function (rate) {
+//   return function (value) {
+//     return value + value * rate;
+//   };
+// };
+// const addVAT2 = addTaxRate(0.23);
+// console.log(addVAT2(100));
+// console.log(addVAT2(23));
+
+///////////////////////////////////
+/* Immediately Invoked Function expressions (IIFE) */
+
+const runOnce = function () {
+  console.log("This will never run again");
 };
-const addVAT2 = addTaxRate(0.23);
-console.log(addVAT2(100));
-console.log(addVAT2(23));
+runOnce();
+
+(function () {
+  console.log("This will never run again");
+})();
+
+(() => console.log("This will ALSO never run again"))();
+
+{
+  const isPrivate = 23;
+  var notPrivate = 46;
+}
+
+// console.log(isPrivate);
+console.log(notPrivate);
