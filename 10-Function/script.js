@@ -1,4 +1,26 @@
 "use strict";
+////////////////////////////////
+/* Default Parameter*/
+// const bookings = [];
+
+// const createBooking = function (flightNum, numPassengers = 1, price = 200 * 5) {
+//   const booking = {
+//     flightNum,
+//     numPassengers,
+//     price,
+//   };
+//   console.log(booking);
+//   bookings.push(booking);
+// };
+
+// createBooking("LH234");
+// createBooking("LH123", 2, 800);
+// createBooking("LH123", 2);
+// createBooking("LH123", 5);
+
+////////////////////////////////////
+/* How passing arguments works: Value vs. Referance */
+
 // const flight = "LH234";
 // const jonas = {
 //   name: "Jonas Schmedtmann",
@@ -17,7 +39,7 @@
 // console.log(flight);
 // console.log(jonas);
 
-/* Is the same as doing... */
+// /* Is the same as doing... */
 // const flightNum = flight;
 // const passenger = jonas;
 // const newPassport = function (person) {
@@ -25,11 +47,9 @@
 // };
 // newPassport(jonas);
 // checkIn(flight, jonas);
-// First-class and Higher-order functions
-// Functions returning functions
 
 ///////////////////////////////////
-/* First class and higher order function */
+/* Function accepting callback function */
 // const oneWord = function (str) {
 //   return str.replace(/ /g, "").toLowerCase();
 // };
@@ -39,7 +59,7 @@
 //   return [first.toUpperCase(), ...others].join(" ");
 // };
 
-/* Higher-order function */
+// /* Higher-order function */
 // const transformer = function (str, fn) {
 //   console.log(`Original string: ${str}`);
 //   console.log(`Transformed string: ${fn(str)}`);
@@ -70,7 +90,7 @@
 // greet("Hello")("Harsh");
 
 /* Arrow Function */
-// Example 1
+/* Example 1 */
 // const greet2 = (greeting) => {
 //   return (name) => {
 //     console.log(`${greeting} ${name} `);
@@ -79,10 +99,10 @@
 
 // const greeterHey2 = greet2("Hey");
 // greeterHey2("Harsh"); // Hey Harsh
-// greeterHey2("Bob");  // Hey Bob
-
+// greeterHey2("Bob"); // Hey Bob
 // greet2("Hello")("Harsh"); // Hello Harsh
-//Example 2
+
+// //Example 2
 // const greet3 = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
 // greet3("Hey")("Harsh"); // Hey Harsh
@@ -115,7 +135,7 @@
 
 // // book(23, "Harsh"); // book is not a function
 
-// // Call Method
+/* Call Method */
 // book.call(eurowings, 23, "Harsh");
 // console.log(eurowings);
 
@@ -131,14 +151,14 @@
 // book.call(swiss, 583, "Harsh"); // Swiss Air line
 // console.log(swiss); // Swiss Air line
 
-// // Apply Method
+/* Apply Method */
 // const flightData = [583, "Harsh"];
 // book.apply(swiss, flightData);
 // console.log(swiss);
 
 // book.call(swiss, ...flightData); // same as apply method but it is not used anymore
 
-// // Bind Method
+/* Bind Method */
 // const bookEW = book.bind(eurowings);
 // const bookLH = book.bind(lufthansa);
 // const bookLX = book.bind(swiss);
@@ -180,21 +200,34 @@
 ///////////////////////////////////
 /* Immediately Invoked Function expressions (IIFE) */
 
-const runOnce = function () {
-  console.log("This will never run again");
+// const runOnce = function () {
+//   console.log("This will never run again");
+// };
+// runOnce();
+
+// (function () {
+//   console.log("This will never run again");
+// })();
+
+// (() => console.log("This will ALSO never run again"))();
+
+// {
+//   const isPrivate = 23;
+//   var notPrivate = 46;
+// }
+
+// // console.log(isPrivate);
+// console.log(notPrivate);
+
+///////////////////////////////////
+/* Closures */
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
 };
-runOnce();
 
-(function () {
-  console.log("This will never run again");
-})();
-
-(() => console.log("This will ALSO never run again"))();
-
-{
-  const isPrivate = 23;
-  var notPrivate = 46;
-}
-
-// console.log(isPrivate);
-console.log(notPrivate);
+const booker = secureBooking();
