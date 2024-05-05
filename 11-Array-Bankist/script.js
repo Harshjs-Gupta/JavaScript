@@ -138,7 +138,7 @@
 
 ////////////////////////////////
 /* The filter Method */
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 // const deposits = movements.filter(function (mov) {
 //   return mov > 0;
@@ -151,5 +151,14 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 // console.log(depositsFor);
 
-const withdrawal = movements.filter((mov) => mov < 0);
-console.log(withdrawal);
+// const withdrawal = movements.filter((mov) => mov < 0);
+// console.log(withdrawal);
+
+///////////////////////////////////////////
+/* The reduce Method */
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const balance = movements.reduce(function (acc, cur) {
+  return acc + cur;
+}, 0);
+console.log(balance);
