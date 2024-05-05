@@ -158,7 +158,11 @@
 /* The reduce Method */
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-const balance = movements.reduce(function (acc, cur) {
-  return acc + cur;
-}, 0);
+// const balance = movements.reduce(function (acc, cur) {
+//   return acc + cur;
+// }, 0);
+// console.log(balance);
+
+// Arrow function
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
 console.log(balance);
