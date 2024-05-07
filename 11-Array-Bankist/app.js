@@ -88,6 +88,11 @@ const calcDisplaySummary = function (movements) {
     .filter((mov) => mov > 0)
     .reduce((acc, mov) => acc + mov, 0);
   labelSumIn.textContent = `${incomes}€`;
+
+  const loss = movements
+    .filter((mov) => mov < 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  labelSumOut.textContent = `${Math.abs(loss)}€`;
 };
 calcDisplaySummary(account1.movements);
 
