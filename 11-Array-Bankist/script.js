@@ -415,3 +415,7 @@ btnClose.addEventListener("click", function (e) {
 
 // const anyDeposits = movements.some((mov) => mov > 0);
 // console.log(anyDeposits);
+
+//EVERY: CONDITION
+// console.log(movements.every((mov) => mov > 0));
+// console.log(account4.movements.every((mov) => mov > 0));
