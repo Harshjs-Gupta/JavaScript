@@ -69,9 +69,9 @@ const displayMovements = function (movements) {
   });
 };
 
-const calcPrintBalance = function (movements) {
-  const balance = movements.reduce((acc, mov) => acc + mov, 0);
-  labelBalance.textContent = `${balance}€`;
+const calcPrintBalance = function (acc) {
+  acc.balance = acc.movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${acc.balance}€`;
 };
 
 const calcDisplaySummary = function (acc) {
@@ -108,16 +108,16 @@ const createUsernames = function (accs) {
 createUsernames(accounts);
 
 //Event Listener
-const UpdateUI = function () {
+const UpdateUI = function (acc) {
   // Display movements
-  displayMovements(currentAccount.movements);
+  displayMovements(acc.movements);
 
   // Dispaly balance
-  calcPrintBalance(currentAccount.movements);
+  calcPrintBalance(acc);
   0;
 
   // Display Summary
-  calcDisplaySummary(currentAccount);
+  calcDisplaySummary(acc);
 };
 
 let currentAccount;
@@ -135,10 +135,51 @@ btnLogin.addEventListener("click", function (e) {
     containerApp.style.opacity = 100;
   }
 
-  UpdateUI();
+  UpdateUI(currentAccount);
 
   inputLoginUsername.value = inputLoginPin.value = "";
   inputLoginPin.blur();
+});
+
+btnTransfer.addEventListener("click", function (e) {
+  e.preventDefault();
+  const amount = Number(inputTransferAmount.value);
+  const receiverAcc = accounts.find(
+    (acc) => acc.username === inputTransferTo.value
+  );
+  inputTransferAmount.value = inputTransferTo.value = "";
+
+  if (
+    amount > 0 &&
+    currentAccount.balance >= amount &&
+    receiverAcc?.username !== currentAccount.username
+  ) {
+    currentAccount.movements.push(-amount);
+    receiverAcc.movements.push(amount);
+    UpdateUI(currentAccount);
+  }
+});
+
+btnClose.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (
+    inputCloseUsername.value === currentAccount.username &&
+    Number(inputClosePin.value) === currentAccount.pin
+  ) {
+    const index = accounts.findIndex(
+      (acc) => acc.username === currentAccount.username
+    );
+    console.log(index);
+
+    //Delete account
+    accounts.splice(index, 1);
+
+    // Hide UI
+    containerApp.style.opacity = 0;
+  }
+  inputCloseUsername.value = inputClosePin.value = " ";
+  inputClosePin.blur();
 });
 
 /////////////////////////////////////////////////
