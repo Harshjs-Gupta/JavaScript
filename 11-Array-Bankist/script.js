@@ -399,3 +399,19 @@ btnClose.addEventListener("click", function (e) {
 
 // const account = accounts.find((acc) => acc.owner === "Jessica Davis");
 // console.log(account);
+
+//////////////////////////////////////////
+/* Some and Every */
+
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+// console.log(movements);
+
+/* EQUALITY */
+// console.log(movements.includes(-130));
+
+/* SOME: CONDITION */
+// console.log(movements.some((mov) => mov === -130));
+
+// const anyDeposits = movements.some((mov) => mov > 0);
+// console.log(anyDeposits);
