@@ -478,3 +478,12 @@ btnSort.addEventListener("click", function (e) {
 //   if (a < b) return 1;
 // });
 // console.log(movements);
+
+//Ascending
+// movements.sort((a, b) => a - b);
+// console.log(movements);
+
+// //Descending
+
+// movements.sort((a, b) => b - a);
+// console.log(movements);
