@@ -453,3 +453,21 @@ btnSort.addEventListener("click", function (e) {
 //   .reduce((acc, mov) => acc + mov, 0);
 
 // console.log(overallBalance2);
+
+/////////////////////////////////////////
+/* Sorting Arrays */
+
+//String
+// const owners = ["Jonas", "Zach", "Adam", "Martha"];
+// console.log(owners.sort());
+// console.log(owners);
+
+// Numbers
+// Ascending
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+//  console.log(movements);
+// movements.sort((a, b) => {
+//   if (a > b) return 1;
+//   if (a < b) return -1;
+// });
+// console.log(movements);
