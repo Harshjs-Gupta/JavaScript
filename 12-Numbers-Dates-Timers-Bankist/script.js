@@ -554,3 +554,20 @@ btnSort.addEventListener("click", function (e) {
 // const days1 = calcDaysPassed(new Date(2037, 3, 14), new Date(2037, 3, 24));
 
 // console.log(days1);
+
+//////////////////////////////////////
+/* Internationalizing Numbers (Intl) */
+// const num = 3884764.23;
+// const option = {
+//   style: "currency",
+//   unit: "celsius",
+//   currency: "EUR",
+// };
+
+// console.log("US: ", new Intl.NumberFormat("en-US", option).format(num));
+// console.log("Germany: ", new Intl.NumberFormat("de-DE", option).format(num));
+// console.log("Syria: ", new Intl.NumberFormat("ar-SY", option).format(num));
+// console.log(
+//   navigator.language,
+//   new Intl.NumberFormat(navigator.language, option).format(num)
+// );
