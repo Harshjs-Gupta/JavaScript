@@ -311,12 +311,12 @@ btnSort.addEventListener("click", function (e) {
 // });
 // console.log(cur); // undefined
 
-const arr = [1, 2, 4, 5, 6];
-const arr2 = [];
-const calc = arr.filter((cal) => {
-  return arr2.push(cal * 2);
-});
-console.log(arr2);
+// const arr = [1, 2, 4, 5, 6];
+// const arr2 = [];
+// const calc = arr.filter((cal) => {
+//   return arr2.push(cal * 2);
+// });
+// console.log(arr2);
 
 // /* Sets */
 // const currenciesUnique = new Set(["USD", "GBP", "USD", "EUR", "EUR"]);
