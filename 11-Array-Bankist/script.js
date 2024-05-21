@@ -296,15 +296,27 @@ btnSort.addEventListener("click", function (e) {
 /* forEach with Maps and Sets */
 
 /* Maps */
-// const currencies = new Map([
+// const currencies = [
 //   ["USD", "United States dollar"],
 //   ["EUR", "Euro"],
 //   ["GBP", "Pound sterling"],
-// ]);
+// ];
 
-// currencies.forEach(function (value, key, map) {
+// const curr = currencies.forEach(function (value, key, map) {
 //   console.log(`${key}: ${value}`);
 // });
+// console.log(curr); // undefined
+// const cur = currencies.forEach().map(function (value, key, map) {
+//   console.log(`${key}: ${value}`);
+// });
+// console.log(cur); // undefined
+
+const arr = [1, 2, 4, 5, 6];
+const arr2 = [];
+const calc = arr.filter((cal) => {
+  return arr2.push(cal * 2);
+});
+console.log(arr2);
 
 // /* Sets */
 // const currenciesUnique = new Set(["USD", "GBP", "USD", "EUR", "EUR"]);
@@ -465,10 +477,10 @@ btnSort.addEventListener("click", function (e) {
 // Numbers
 // Ascending
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-//  console.log(movements);
+// //  console.log(movements);
 // movements.sort((a, b) => {
-//   if (a > b) return 1;
-//   if (a < b) return -1;
+//   if (a > b) return a;
+//   if (a < b) return b;
 // });
 // console.log(movements);
 
@@ -521,3 +533,40 @@ btnSort.addEventListener("click", function (e) {
 
 //   const movementsUI2 = [...document.querySelectorAll('.movements__value')];
 // });
+
+// const harsh = {
+//   firstName: "harsh",
+//   lastName: "gupta",
+//   work: "dtudent",
+//   friends: ["bob", "steven", "jonas"],
+//   detail: function () {
+//     return `${this.firstName} ${this.lastName} is a ${this.work} and he has ${this}`;
+//   },
+// };
+// // console.log(this);
+// console.log(harsh.detail());
+
+// const person = {
+//   name: "Alice",
+//   age: 30,
+//   greet() {
+//     const self = this;
+//     const nestedFunction = () => {
+//       console.log(
+//         `Hello, my name is ${self.name} and I am ${self.age} years old.`
+//       );
+//     };
+//     nestedFunction();
+//   },
+// };
+
+// console.log(person.greet()); // Output: Hello, my name is Alice and I am 30 years old.
+
+// const employee = {
+//   name: "Harsh",
+//   age: 20,
+//   deg: "sde",
+//   address: null,
+// };
+
+// console.log(employee?.address?.fullAddress?.primary);
