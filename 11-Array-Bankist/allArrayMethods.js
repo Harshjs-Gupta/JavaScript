@@ -18,3 +18,14 @@
 /* Example 2 add one or more elements */
 // arr.unshift("jessica", "david");
 // console.log(arr);
+
+////////////////////////////////////////
+/* Remove elements from a array */
+/* 3rd Method: pop() method remove element from end of an array*/
+// const arr = ["bob", "steven", "john", "sam", "archi"];
+// arr.pop();
+// console.log(arr);
+
+/* 4th Method: shift() method remove element from begnning of an array*/
+// arr.shift();
+// console.log(arr);
