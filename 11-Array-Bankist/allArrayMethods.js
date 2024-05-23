@@ -9,3 +9,12 @@
 /* Example 2 add one or more elements */
 // arr.push("samridhi","daivd");
 // console.log(arr);
+
+/* 2nd Method: unshift() method add one or more elements at the begnning of an array*/
+/* Exmple 1 add one element */
+// arr.unshift("jessica");
+// console.log(arr);
+
+/* Example 2 add one or more elements */
+// arr.unshift("jessica", "david");
+// console.log(arr);
