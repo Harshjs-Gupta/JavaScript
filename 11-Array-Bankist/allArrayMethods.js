@@ -50,3 +50,11 @@
 // const arr = ["a", "b", "c", "d", "e"];
 // arr.reverse();
 // console.log(arr);
+
+/* Example 2 here we reverse a specific part of array*/
+// const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
+// let start = 2;
+// let end = 4;
+// const reversePart = arr.slice(2, 4 + 1).reverse();
+// arr.splice(start, reversePart.length, ...reversePart);
+// console.log(arr);
