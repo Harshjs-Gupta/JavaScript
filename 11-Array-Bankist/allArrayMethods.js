@@ -72,3 +72,8 @@
 //   if (a < b) return -1;
 // });
 // console.log(arr);
+
+/* 8th Method: fill() method is used to fills a specific elements in anararray */
+// const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
+// arr.fill("michel", 2, 3);
+// console.log(arr);
