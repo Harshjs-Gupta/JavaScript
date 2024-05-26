@@ -83,3 +83,8 @@
 // const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const output = arr.map((curr) => curr * 2);
 // console.log(output);
+
+/* 10th Method: filter() method is used to filled with elements that pass a condition provided by the function and return result in new array */
+// const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const output = arr.filter((curr) => curr < 0); // this gives elemnet which is smaller then 0
+// console.log(output);
