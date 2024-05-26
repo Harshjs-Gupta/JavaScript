@@ -21,7 +21,7 @@
 
 ////////////////////////////////////////
 /* Remove elements from a array */
-/* 3rd Method: pop() method remove element from end of an array*/
+/* 3rd Method: pop() method remove element from end of an array */
 // const arr = ["bob", "steven", "john", "sam", "archi"];
 // arr.pop();
 // console.log(arr);
@@ -77,3 +77,9 @@
 // const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
 // arr.fill("michel", 2, 3);
 // console.log(arr);
+
+/* This method return new array */
+/* 9th Method: map() method is creating a new array by calling a function on eavery element if the original array and return result in new array */
+// const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const output = arr.map((curr) => curr * 2);
+// console.log(output);
