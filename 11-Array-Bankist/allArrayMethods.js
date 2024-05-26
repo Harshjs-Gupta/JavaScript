@@ -93,3 +93,10 @@
 // const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
 // const output = arr.slice(2, 5);
 // console.log(output);
+
+/* 12th Method: concat() method is used to combine two or more string */
+/* Examle 1 combine one array */
+// const arr1 = ["a", "b", "c", "d"];
+// const arr2 = ["e", "f", "g", "h"];
+// const output = arr1.concat(arr2);
+// console.log(output);
