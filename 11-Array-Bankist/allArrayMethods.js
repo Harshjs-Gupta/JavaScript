@@ -100,3 +100,10 @@
 // const arr2 = ["e", "f", "g", "h"];
 // const output = arr1.concat(arr2);
 // console.log(output);
+
+/* Example 2 cobimne two array */
+// const arr1 = ["a", "b", "c", "d"];
+// const arr2 = ["e", "f", "g", "h"];
+// const arr3 = ["i", "j", "k", "l"];
+// const output = arr1.concat(arr2, arr3);
+// console.log(output);
