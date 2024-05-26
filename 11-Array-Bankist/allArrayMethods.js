@@ -88,3 +88,8 @@
 // const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const output = arr.filter((curr) => curr < 0); // this gives elemnet which is smaller then 0
 // console.log(output);
+
+/* 11th Method: slice() method is used to extract a part of string and store it into a new variable and return new array */
+// const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
+// const output = arr.slice(2, 5);
+// console.log(output);
