@@ -107,3 +107,13 @@
 // const arr3 = ["i", "j", "k", "l"];
 // const output = arr1.concat(arr2, arr3);
 // console.log(output);
+
+/* 13th Method: flat() method is used to flattening the nested array into a single new array. It.s takes one parameter which is depth parameter depth parameter means number of nested loop which is written as a parameter */
+/* Example 1 */
+// const arr = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+// const output = arr.flat();
+// console.log(output);
