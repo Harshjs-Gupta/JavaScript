@@ -117,3 +117,11 @@
 // ];
 // const output = arr.flat();
 // console.log(output);
+
+/* Example 2 */
+// const arr = [
+//   [[1, 2], 3],
+//   [4, [5, 6]],
+// ];
+// const output = arr.flat(2);
+// console.log(output);
