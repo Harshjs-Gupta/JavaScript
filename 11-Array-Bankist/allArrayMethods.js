@@ -141,3 +141,8 @@
 //   return n % 2 === 0 ? [n] : [n - 1, 1];
 // });
 // console.log(result); // [4, 1, 4, 20, 16, 1, 18]
+
+/* Example 2 */
+// const arr = [[200, 450], -400, [3000, -650], -130, [70, 1300]];
+// const output = arr.flat().flatMap((el) => el * 2);
+// console.log(output);
