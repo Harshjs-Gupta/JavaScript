@@ -38,6 +38,8 @@
 //     arr.splice(index, 2);
 //   }
 // });
+
+// arr.splice(1, 2);
 // console.log(arr);
 
 /* here we insert element */
@@ -144,5 +146,7 @@
 
 /* Example 2 */
 // const arr = [[200, 450], -400, [3000, -650], -130, [70, 1300]];
-// const output = arr.flat().flatMap((el) => el * 2);
+// const output = arr.flatMap((el) =>
+//   Array.isArray(el) ? el.map((num) => num * 2) : el * 2
+// );
 // console.log(output);
