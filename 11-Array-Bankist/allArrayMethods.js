@@ -161,3 +161,8 @@
 // const array1 = [5, 12, 8, 130, 44];
 // const output = array1.findIndex((el) => el > 13);
 // console.log(`Element which is greater then 13 at index ${output}`);
+
+/* 17th Method: find() method of Array instances returns the first element in the provided array that satisfies the provided testing function */
+// const array1 = [5, 12, 8, 130, 44];
+// const output = array1.find((el) => el > 13);
+// console.log(`Element which is greater then 13 is ${output}`);
