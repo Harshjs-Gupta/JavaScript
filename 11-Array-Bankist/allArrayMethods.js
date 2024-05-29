@@ -150,3 +150,9 @@
 //   Array.isArray(el) ? el.map((num) => num * 2) : el * 2
 // );
 // console.log(output);
+
+/* This methods to find index of element */
+/* 15th Method: indexOf() method is used to find the index of element */
+// const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
+// const output = arr.indexOf("john");
+// console.log(output);
