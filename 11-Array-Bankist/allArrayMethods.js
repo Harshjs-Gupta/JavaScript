@@ -156,3 +156,8 @@
 // const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
 // const output = arr.indexOf("john");
 // console.log(output);
+
+/* 16th Method: findIndex() method is an iterative method. It calls a provided callback function once for each element on an array in ascending-index order, until callback function returns a truthy value */
+// const array1 = [5, 12, 8, 130, 44];
+// const output = array1.findIndex((el) => el > 13);
+// console.log(`Element which is greater then 13 at index ${output}`);
