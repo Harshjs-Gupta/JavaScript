@@ -194,3 +194,10 @@
 // const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const output = arr.reduce((acc, curr) => acc + curr);
 // console.log(output);
+
+/* 23rd Method: forEach() method is used to loops over an array it does not create new array and it takes three parameter which is first current value of element second index of element third whole arr*/
+//  const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// arr.forEach((curr, index, arr) => {
+//   arr[index] = curr * 2;
+// });
+// console.log(arr);
