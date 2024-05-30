@@ -172,3 +172,8 @@
 // const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
 // const output = arr.includes("sam");
 // console.log(output);
+
+/* 19th Method: some() method returns true (and stop) if the function returns true for one of the array elements */
+// const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const output = arr.some((curr) => curr % 2 === 0);
+// console.log(output);
