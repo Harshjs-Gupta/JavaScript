@@ -177,3 +177,8 @@
 // const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const output = arr.some((curr) => curr % 2 === 0);
 // console.log(output);
+
+/* 20th Method: every() method returns true if the all conoditions of callback function are true */
+// const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const output = arr.every((curr) => curr < 0);
+// console.log(output);
