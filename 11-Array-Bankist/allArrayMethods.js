@@ -182,3 +182,9 @@
 // const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const output = arr.every((curr) => curr < 0);
 // console.log(output);
+
+/* This join method is used to join string with any symbol ,and string and character and it returns a new string*/
+/* 21st Method: join() method return an array as a string */
+// const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
+// const output = arr.join(" & ");
+// console.log(output);
