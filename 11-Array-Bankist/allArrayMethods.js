@@ -201,3 +201,11 @@
 //   arr[index] = curr * 2;
 // });
 // console.log(arr);
+
+/* Example 2 here are the output with index */
+// arr.forEach((value, index, arr) =>
+//   console.log(`At index: ${index} value is: ${value}`)
+// );
+
+/* Example 3 here are output is in array */
+// arr.forEach((curr, ind, arr) => console.log(arr));
