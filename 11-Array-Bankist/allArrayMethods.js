@@ -166,3 +166,9 @@
 // const array1 = [5, 12, 8, 130, 44];
 // const output = array1.find((el) => el > 13);
 // console.log(`Element which is greater then 13 is ${output}`);
+
+/* This three function return boolean value if the provided condition is passed */
+/* 18th Method: includes() method  returns true if a string contains a specified string */
+// const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
+// const output = arr.includes("sam");
+// console.log(output);
