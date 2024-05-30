@@ -188,3 +188,9 @@
 // const arr = ["bob", "steven", "john", "sam", "archi", "samridhi"];
 // const output = arr.join(" & ");
 // console.log(output);
+
+/* This method is used to transform to value */
+/* 22nd  Method: reduce method is used to boil down an array to single value of any type: number, string ,boolean ,or even new array or object*/
+// const arr = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const output = arr.reduce((acc, curr) => acc + curr);
+// console.log(output);
