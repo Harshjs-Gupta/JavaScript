@@ -371,6 +371,31 @@ btnSort.addEventListener("click", function (e) {
 // const withdrawal = movements.filter((mov) => mov < 0);
 // console.log(withdrawal);
 
+// const users = [
+//   { firstName: "harsh", lastName: "gupta", age: 26 },
+//   { firstName: "donal", lastName: "trump", age: 75 },
+//   { firstName: "elon", lastName: "musk", age: 50 },
+//   { firstName: "deppika", lastName: "padukone", age: 26 },
+// ];
+
+// const output = users.filter((a) => a.age < 30).map((first) => first.firstName);
+// console.log(output);
+
+// const output = users.reduce((acc, curr) => {
+//   if (curr.age < 30) {
+//     acc.push(curr.firstName);
+//   }
+//   return acc;
+// }, []);
+// console.log(output);
+
+// const arr = [1, 2, 3, 4, 5, 3, 1, 2, 4, 5];
+// const uniqueElements = arr.filter((element, index, array) => {
+//   // Check if the index of the current element is the same as its first occurrence index
+//   return array.indexOf(element) === index;
+// });
+// console.log(uniqueElements);
+
 ///////////////////////////////////////////
 /* The reduce Method */
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -398,6 +423,24 @@ btnSort.addEventListener("click", function (e) {
 // }, movements[0]);
 
 // console.log(maximumMovements);
+
+// const users = [
+//   { firstName: "harsh", lastName: "gupta", age: 26 },
+//   { firstName: "donal", lastName: "trump", age: 75 },
+//   { firstName: "elon", lastName: "musk", age: 50 },
+//   { firstName: "deppika", lastName: "padukone", age: 26 },
+// ];
+
+//{26 :2, 75: 1, 50: 1}
+// const countAge = users.reduce(function (acc, curr) {
+//   if (acc[curr.age]) {
+//     acc[curr.age]++;
+//   } else {
+//     acc[curr.age] = 1;
+//   }
+//   return acc;
+// }, {});
+// console.log(countAge);
 
 ///////////////////////////////////////////
 /* The Magic Of Changing Method */
@@ -479,8 +522,8 @@ btnSort.addEventListener("click", function (e) {
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // //  console.log(movements);
 // movements.sort((a, b) => {
-//   if (a > b) return a;
-//   if (a < b) return b;
+//   if (a > b) return 1;
+//   if (a < b) return -1;
 // });
 // console.log(movements);
 
