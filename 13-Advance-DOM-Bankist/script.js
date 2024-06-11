@@ -324,3 +324,11 @@ slider();
 
 // // header.before(message);
 // // header.after(message);
+
+// // Delete elements
+// document
+// .querySelector('.btn--close-cookie')
+// .addEventListener('click', function () {
+//   // message.remove();
+//   message.parentElement.removeChild(message);
+// });
