@@ -397,3 +397,15 @@ slider();
 // // h1.onmouseenter = function (e) {
 // //   alert('onmouseenter: Great! You are reading the heading :D');
 // // };
+
+///////////////////////////////////////
+/* Event Propagation in Practice */
+// const randomInt = (min, max) =>
+// Math.floor(Math.random() * (max - min + 1) + min);
+// const randomColor = () =>
+// `rgb(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(0, 255)})`;
+
+// document.querySelector('.nav__link').addEventListener('click', function (e) {
+// this.style.backgroundColor = randomColor();
+// console.log('LINK', e.target, e.currentTarget);
+// console.log(e.currentTarget === this);
