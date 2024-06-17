@@ -28,3 +28,13 @@
 // // USE of instanceof Method: Here we check whether an object belongs to a certain class or not
 // console.log(harsh instanceof Person); //true
 // console.log(jay instanceof Person); //false
+
+// /////////////////////////////////////////
+// /* LECTURE 210 */
+// /* Prototype */
+// Person.prototype.calcAge = function () {
+//   console.log(2037 - this.birthyear);
+// };
+
+// harsh.calcAge();
+// matilda.calcAge();
