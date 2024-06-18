@@ -45,3 +45,10 @@
 // console.log(Person.prototype.isPrototypeOf(harsh));
 // console.log(Person.prototype.isPrototypeOf(matilda));
 // console.log(Person.prototype.isPrototypeOf(Person));
+
+// .prototyeOfLinkedObjects
+// Person.prototype.species = 'Homo Sapiens';
+// console.log(jonas.species, matilda.species);
+
+// console.log(jonas.hasOwnProperty('firstName'));
+// console.log(jonas.hasOwnProperty('species'));
