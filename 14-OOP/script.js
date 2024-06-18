@@ -67,3 +67,12 @@
 // console.log(arr.__proto__ === Array.prototype);
 
 // console.log(arr.__proto__.__proto__);
+
+// Array.prototype.unique = function () {
+//   return [...new Set(this)];
+// };
+
+// console.log(arr.unique());
+
+// const h1 = document.querySelector('h1');
+// console.dir(x => x + 1);
