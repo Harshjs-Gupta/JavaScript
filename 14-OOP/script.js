@@ -197,3 +197,8 @@
 //   Person.prototype.calcAge = function () {
 //     console.log(2037 - this.birthYear);
 //   };
+
+//   const Student = function (firstName, birthYear, course) {
+//     Person.call(this, firstName, birthYear);
+//     this.course = course;
+//   };
