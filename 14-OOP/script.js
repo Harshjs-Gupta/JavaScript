@@ -209,3 +209,10 @@
 //   Student.prototype.introduce = function () {
 //     console.log(`My name is ${this.firstName} and I study ${this.course}`);
 //   };
+
+//   const mike = new Student('Mike', 2020, 'Computer Science');
+//   mike.introduce();
+//   mike.calcAge();
+
+//   console.log(mike.__proto__);
+//   console.log(mike.__proto__.__proto__);
