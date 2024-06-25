@@ -383,3 +383,12 @@
 //   static helper() {
 //     console.log("Helper");
 //   }
+
+//   // 4) Private methods
+//   // #approveLoan(val) {
+//   _approveLoan(val) {
+//     return true;
+//   }
+// }
+
+// const acc1 = new Account("Jonas", "EUR", 1111);
