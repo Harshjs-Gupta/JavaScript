@@ -353,3 +353,33 @@
 
 //     console.log(`Thanks for opening an account, ${owner}`);
 //   }
+
+//   // 3) Public methods
+
+//   // Public interface
+//   getMovements() {
+//     return this.#movements;
+//   }
+
+//   deposit(val) {
+//     this.#movements.push(val);
+//     return this;
+//   }
+
+//   withdraw(val) {
+//     this.deposit(-val);
+//     return this;
+//   }
+
+//   requestLoan(val) {
+//     // if (this.#approveLoan(val)) {
+//     if (this._approveLoan(val)) {
+//       this.deposit(val);
+//       console.log(`Loan approved`);
+//       return this;
+//     }
+//   }
+
+//   static helper() {
+//     console.log("Helper");
+//   }
