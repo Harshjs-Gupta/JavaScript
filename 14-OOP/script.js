@@ -321,3 +321,35 @@
 // jay.init("Jay", 2010, "Computer Science");
 // jay.introduce();
 // jay.calcAge();
+
+// ///////////////////////////////////////
+// // Encapsulation: Protected Properties and Methods
+
+//////////////////////////////////////////
+// // Encapsulation: Private Class Fields and Methods
+
+// // 1) Public fields
+// // 2) Private fields
+// // 3) Public methods
+// // 4) Private methods
+// // (there is also the static version)
+
+// class Account {
+//   // 1) Public fields (instances)
+//   locale = navigator.language;
+
+//   // 2) Private fields (instances)
+//   #movements = [];
+//   #pin;
+
+//   constructor(owner, currency, pin) {
+//     this.owner = owner;
+//     this.currency = currency;
+//     this.#pin = pin;
+
+//     // Protected property
+//     // this._movements = [];
+//     // this.locale = navigator.language;
+
+//     console.log(`Thanks for opening an account, ${owner}`);
+//   }
