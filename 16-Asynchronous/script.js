@@ -28,3 +28,8 @@ const renderCountry = function (data, className = "") {
 
   countriesContainer.insertAdjacentHTML("beforebegin", html);
 };
+
+const renderError = function (msg) {
+  countriesContainer.insertAdjacentText("beforeend", msg);
+  countriesContainer.style.opacity = 1;
+};
