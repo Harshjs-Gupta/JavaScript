@@ -33,3 +33,15 @@ const renderError = function (msg) {
   countriesContainer.insertAdjacentText("beforeend", msg);
   countriesContainer.style.opacity = 1;
 };
+
+const getJSON = function (url, errorMSg = "Something went wrong") {
+  return fetch(url).then((response) => {
+    // console.log(response);
+
+    if (!response.ok) {
+      throw new Error(`${errorMSg} (${response.status})`);
+    }
+
+    return response.json();
+  });
+};
