@@ -106,3 +106,25 @@ const getJSON = function (url, errorMSg = "Something went wrong") {
 
 //     //Render country 1
 //     renderCountry(data);
+
+//     // Get neighbour country 2
+//     const neighbour = Object.values(data.borders)[0];
+//     // console.log(neighbour);
+//     if (!neighbour) return;
+
+//     //AJAX call country 2
+//     const request2 = new XMLHttpRequest();
+//     request2.open("GET", `https://restcountries.com/v3.1/alpha/${neighbour}`);
+//     request2.send();
+
+//     request2.addEventListener("load", function () {
+//       const [data2] = JSON.parse(request2.responseText);
+//       console.log(data2);
+
+//       //Render country 2
+//       renderCountry(data2, "neighbour");
+//     });
+//   });
+// };
+
+// getCountryAndNeighbour("bharat");
