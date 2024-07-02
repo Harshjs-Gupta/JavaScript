@@ -142,3 +142,17 @@ const getJSON = function (url, errorMSg = "Something went wrong") {
 //     }, 1000);
 //   }, 1000);
 // }, 1000);
+
+//////////////////////////////////////////
+/* LECTURE 252 */
+/* Promises and the fetch API */
+
+/* old way to call API using XMLHttpRequest */
+// const request = new XMLHttpRequest();
+//   request.open("GET", `https://restcountries.com/v3.1/name/${country}`);
+//   request.send();
+
+/* Here we call API using fetch() method */
+
+// const request = fetch("https://restcountries.com/v3.1/name/bharat");
+// console.log(request);
