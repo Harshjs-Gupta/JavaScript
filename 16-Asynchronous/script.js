@@ -193,3 +193,50 @@ const getJSON = function (url, errorMSg = "Something went wrong") {
 //       renderError(`Something went wrong 💥💥 ${err.message}. Try again!`);
 //     });
 // };
+
+/* Hard coded */
+/* const getCountryData = function (country) {
+  //country 1
+  fetch(`https://restcountries.com/v3.1/name/${country}`)
+    .then((response) => {
+      // console.log(response);
+
+      if (!response.ok) {
+        throw new Error(`Country not found (${response.status})`);
+      }
+
+      return response.json();
+    })
+    .then((data) => {
+      // console.log(data);
+      renderCountry(data[0]);
+
+      const neighbour = data[0].borders[0];
+
+      if (!neighbour) return;
+      // else {
+      //   getNeighbourData(neighbour);
+      // }
+
+      //country 2
+      return fetch(`https://restcountries.com/v3.1/alpha/${neighbour}`);
+    })
+    .then((response) => {
+      // console.log(response);
+
+      if (!response.ok) {
+        throw new Error(`Country not found (${response.status})`);
+      }
+
+      return response.json();
+    })
+    .then((data) => {
+      // console.log(data);
+      renderCountry(data[0], "neighbour");
+    })
+    .catch((err) => {
+      console.error(`${err} 💥💥💥`);
+      renderError(`Something went wrong 💥💥 ${err.message}. Try again!`);
+    })
+    .finally(() => (countriesContainer.style.opacity = 1));
+}; */
