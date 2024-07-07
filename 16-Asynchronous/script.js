@@ -156,3 +156,21 @@ const getJSON = function (url, errorMSg = "Something went wrong") {
 
 // const request = fetch("https://restcountries.com/v3.1/name/bharat");
 // console.log(request);
+
+///////////////////////////////////////////////////
+/* LECTURE 253 */
+/* Comsuming Promises */
+// const getCountryData = function (country) {
+//   fetch(`https://restcountries.com/v3.1/name/${country}`)
+//     .then(function (response) {
+//       // console.log(response);
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//       renderCountry(data[0]);s
+//     });
+// };
+
+// getCountryData("bharat");
+// getCountryData("usa");
