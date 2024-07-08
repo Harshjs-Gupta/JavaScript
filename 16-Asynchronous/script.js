@@ -279,3 +279,8 @@ const getJSON = function (url, errorMSg = "Something went wrong") {
 // btn.addEventListener("click", function () {
 //   getCountryData("bharat");
 // });
+
+////////////////////////////////////
+/* LECTURE 255 */
+/* Handling rejected promises */
+/// For handle rejected promise we use .catch() method is used to
