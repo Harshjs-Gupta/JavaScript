@@ -367,3 +367,9 @@ TEST COORDINATES 2: -33.933, 18.474 */
 // });
 
 // lotteryPromise.then((res) => console.log(res)).catch((err) => console.log(err));
+
+// const wait = function (seconds) {
+//   return new Promise(function (resolve) {
+//     setTimeout(resolve, seconds * 1000);
+//   });
+// };
