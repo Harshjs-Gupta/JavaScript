@@ -373,3 +373,10 @@ TEST COORDINATES 2: -33.933, 18.474 */
 //     setTimeout(resolve, seconds * 1000);
 //   });
 // };
+
+// wait(2)
+//   .then(() => {
+//     console.log("I wait for 2 seconds");
+//     return wait(1);
+//   })
+//   .then(() => console.log("I wait for 1 second"));
