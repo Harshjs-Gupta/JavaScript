@@ -409,3 +409,20 @@ TEST COORDINATES 2: -33.933, 18.474 */
 //     return wait(4);
 //   })
 //   .then(() => console.log("4 second passed"));
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+/* LECTURE 261 */
+/* Promisifying the Geolocation API */
+
+// const getPosition = function () {
+//   return new Promise(function (resolve, reject) {
+//     // navigator.geolocation.getCurrentPosition(
+//     //   (position) => console.log(position),
+//     //   (err) => console.log(err)
+//     // );
+//     navigator.geolocation.getCurrentPosition(resolve, reject);
+//   });
+// };
+
+// // getPosition().then((pos) => console.log(pos));
