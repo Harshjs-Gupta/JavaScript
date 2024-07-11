@@ -575,3 +575,13 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //     throw err;
 //   }
 // };
+
+// btn.addEventListener("click", whereAmI);
+// console.log("1: Will get location");
+// const city = whereAmI();
+// console.log(city);
+
+// whereAmI()
+//   .then((city) => console.log(`2: ${city}`))
+//   .catch((err) => console.log(`2: ${err.message}`))
+//   .finally(() => console.log("3: Finised getting location"));
