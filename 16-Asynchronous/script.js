@@ -585,3 +585,17 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //   .then((city) => console.log(`2: ${city}`))
 //   .catch((err) => console.log(`2: ${err.message}`))
 //   .finally(() => console.log("3: Finised getting location"));
+
+/* we don't write like this because of this is the mix of new and old version insted of this ☝️ we write like this 👇 using Immediately invoke function */
+
+// btn.addEventListener("click", function () {
+//   (async function () {
+//     try {
+//       const city = await whereAmI();
+//       console.log(`2: ${city}`);
+//     } catch (err) {
+//       console.log(`2: ${err.message} 💥`);
+//     }
+//     console.log("3: Finised getting location");
+//   })();
+// });
