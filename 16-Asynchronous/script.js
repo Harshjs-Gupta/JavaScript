@@ -531,3 +531,47 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //   })
 //   .then(() => (currentImg.style.display = "none"))
 //   .catch((err) => console.log(err));
+
+//////////////////////////////////////
+//////////////////////////////////////
+/* LECTURE 263 & 264*/
+/* Consuming Promises with Async/Await & Error handling with try ,catch */
+
+// const getPosition = function () {
+//   return new Promise(function (resolve, reject) {
+//     navigator.geolocation.getCurrentPosition(resolve, reject);
+//   });
+// };
+
+// const whereAmI = async function () {
+//   // Geolocation
+//   try {
+//     const pos = await getPosition();
+//     const { latitude: lat, longitude: lng } = pos.coords;
+
+//     // Reverse geocoding
+//     const resGeoCoding = await fetch(
+//       `https://geocode.xyz/${lat},${lng}?geoit=json`
+//     );
+//     if (!resGeoCoding.ok) throw new Error("Problem getting location data");
+//     // console.log(resGeoCoding);
+
+//     const dataGeo = await resGeoCoding.json();
+//     // console.log(dataGeo);s
+
+//     // Get country data
+//     const res = await fetch(
+//       `https://restcountries.com/v3.1/name/${dataGeo.country}`
+//     );
+//     if (!res.ok) throw new Error("Problem getting country");
+//     const data = await res.json();
+//     renderCountry(data[0]);
+//     return `You are in ${dataGeo.city}, ${dataGeo.state} in ${dataGeo.country}`;
+//   } catch (err) {
+//     console.error(`${err}💥`);
+//     renderError(`${err.message} 💥`);
+
+//     // Reject promise returned from async function
+//     throw err;
+//   }
+// };
