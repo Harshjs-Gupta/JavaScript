@@ -637,3 +637,21 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //   }
 // };
 // getCountry("bharat", "portugal", "usa");
+
+/* Insted of this ☝️ we also write like 👇 */
+// const getCountry = async function (c1, c2, c3) {
+//   try {
+//     const promise1 = fetch(`https://restcountries.com/v3.1/name/${c1}`);
+//     const promise2 = fetch(`https://restcountries.com/v3.1/name/${c2}`);
+//     const promise3 = fetch(`https://restcountries.com/v3.1/name/${c3}`);
+
+//     const res = await Promise.all([promise1, promise2, promise3]);
+//     // console.log(res);
+//     const data = await Promise.all(res.map((response) => response.json()));
+//     // console.log(data);
+//     console.log(data.map((d) => d[0].capital));
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
+// getCountry("bharat", "portugal", "usa");
