@@ -620,3 +620,20 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //   }
 // };
 // get3country("Portugal", "bharat", "canada");
+
+/* Insted of this ☝️ we write like 👇 here GetJSON is a function whcih is defined by my self this function convert url into json format */
+
+// const getCountry = async function (c1, c2, c3) {
+//   try {
+//     const promise1 = getJSON(`https://restcountries.com/v3.1/name/${c1}`);
+//     const promise2 = getJSON(`https://restcountries.com/v3.1/name/${c2}`);
+//     const promise3 = getJSON(`https://restcountries.com/v3.1/name/${c3}`);
+
+//     const data = await Promise.all([promise1, promise2, promise3]);
+//     // console.log(data);
+//     console.log(data.map((d) => d[0].capital));
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
+// getCountry("bharat", "portugal", "usa");
