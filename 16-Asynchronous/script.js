@@ -655,3 +655,18 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //   }
 // };
 // getCountry("bharat", "portugal", "usa");
+
+/////////////////////////////////////
+/////////////////////////////////////
+/* LECTURE 267 */
+/* Other Promise Combinators: race ,allSettled and any */
+/* 1. Promise.race */
+// (async function () {
+//   const res = await Promise.race([
+//     getJSON(`https://restcountries.com/v3.1/name/italy`),
+//     getJSON(`https://restcountries.com/v3.1/name/egypt`),
+//     getJSON(`https://restcountries.com/v3.1/name/mexico`),
+//   ]);
+//   console.log(res[0]);
+//   renderCountry(res[0]);
+// })();
