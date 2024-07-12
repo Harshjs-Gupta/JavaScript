@@ -599,3 +599,24 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //     console.log("3: Finised getting location");
 //   })();
 // });
+
+//////////////////////////////////////
+//////////////////////////////////////
+/* LECTURE 266 */
+/* Running Promises in parallel */
+
+// const get3country = async function (c1, c2, c3) {
+//   try {
+//     /* this promise.all is a combinator function which is use to combine multiple promises*/
+
+//     const data = await Promise.all([
+//       getJSON(`https://restcountries.com/v3.1/name/${c1}`),
+//       getJSON(`https://restcountries.com/v3.1/name/${c2}`),
+//       getJSON(`https://restcountries.com/v3.1/name/${c3}`),
+//     ]);
+//     console.log(data.map((d) => d[0].capital));
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
+// get3country("Portugal", "bharat", "canada");
