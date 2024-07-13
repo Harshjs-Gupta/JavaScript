@@ -670,3 +670,11 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //   console.log(res[0]);
 //   renderCountry(res[0]);
 // })();
+
+// const timeout = function (sec) {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//       reject(new Error("Request took too long time!"));
+//     }, sec * 1000);
+//   });
+// };
