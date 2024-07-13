@@ -678,3 +678,13 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //     }, sec * 1000);
 //   });
 // };
+
+// Promise.race([
+//   getJSON(`https://restcountries.com/v3.1/name/tanzania`),
+//   timeout(2),
+// ])
+//   .then((res) => {
+//     console.log(res);
+//     renderCountry(res[0]);
+//   })
+//   .catch((err) => console.error(err));
