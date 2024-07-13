@@ -710,3 +710,18 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //     }
 //   });
 // })();
+
+/* 3. Promise.any */
+// const promise1 = new Promise((resolve, reject) =>
+//   setTimeout(() => resolve("Promise 1 resolved"), 1000)
+// );
+// const promise2 = new Promise((resolve, reject) =>
+//   setTimeout(() => reject("Promise 2 rejected"), 500)
+// );
+// const promise3 = new Promise((resolve, reject) =>
+//   setTimeout(() => resolve("Promise 3 resolved"), 2000)
+// );
+
+// Promise.any([promise1, promise2, promise3])
+//   .then((result) => console.log("Resolved:", result))
+//   .catch((error) => console.log("Rejected:", error));
