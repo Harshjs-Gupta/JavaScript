@@ -688,3 +688,25 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong i
 //     renderCountry(res[0]);
 //   })
 //   .catch((err) => console.error(err));
+
+/*2. Promise.allSettled */
+// (async function () {
+//   const res = await Promise.allSettled([
+//     getJSON(`https://restcountries.com/v3.1/name/italy`),
+//     getJSON(`https://restcountries.com/v3.1/name/egyptf`),
+//     getJSON(`https://restcountries.com/v3.1/name/mexico`),
+//   ]);
+//   console.log(res);
+//   // renderCountry(res[0]);
+//   // Process each result
+//   res.forEach((result, index) => {
+//     if (result.status === "fulfilled") {
+//       // Assuming result.value contains the response data
+//       console.log(result.value[0]);
+//       // Example of rendering country data
+//       renderCountry(result.value[0]);
+//     } else {
+//       console.error(`Country not found:`, result.reason);
+//     }
+//   });
+// })();
